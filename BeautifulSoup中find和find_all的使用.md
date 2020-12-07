@@ -1,13 +1,13 @@
 [来源出处](https://blog.csdn.net/weixin_42970378/article/details/83108206)
 
-##### #导入beautifulsoup模块
+### #导入beautifulsoup模块
 
 
 ```python
 from bs4 import BeautifulSoup
 ```
 
-##### #HTML例子
+### #HTML例子
 
 
 ```python
@@ -34,7 +34,7 @@ html = '''
 '''
 ```
 
-##### #构建beautifulsoup实例
+### #构建beautifulsoup实例
 
 
 ```python
@@ -48,9 +48,9 @@ soup = BeautifulSoup(html,'lxml')
 - html5lib,该模块可以将内容转换成html5对象
 - 若想要以上功能,就需要具备对应的模块，比如使用lxml就要安装lxml
 
-##### #在bs4当中有很多种匹配方法,但常用有两种:
+### #在bs4当中有很多种匹配方法,但常用有两种:
 
-#### 1.find查找一次
+## 1.find查找一次
 
 只返回第一个匹配到的对象
 
@@ -93,7 +93,7 @@ print('li.string(返回标签内容为字符串):',li.string)
     li.string(返回标签内容为字符串): first item
     
 
-##### #find可以通过"属性 = 值"的方法进行select
+### #find可以通过"属性 = 值"的方法进行select
 
 
 ```python
@@ -109,9 +109,9 @@ print(li,'\n')
     
     
 
-#### #因为class是python的保留关键字，所以无法直接查找class这个关键字
+### #因为class是python的保留关键字，所以无法直接查找class这个关键字
 
-##### # 有两种方法可以进行class属性查询
+### # 有两种方法可以进行class属性查询
 - 第一种:在attrs属性用字典进行传递参数
 
 
@@ -144,7 +144,7 @@ print('BeautifulSoup_class_:',beautifulsoup_class_,'\n')
     
     
 
-#### 2.find_all 查找所有
+## 2.find_all 查找所有
 
 返回所有匹配到的结果，区别于find（find只返回查找到的第一个结果）
 
@@ -192,7 +192,7 @@ for li_all in li_all:
     li的属性: {}
     
 
-##### #最灵活的使用方式
+### #最灵活的使用方式
 
 
 ```python
